@@ -1,0 +1,29 @@
+.spotify-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    position: fixed;
+      margin-top: 751px;
+    background: linear-gradient(50deg, #c21ec8, #5397d3);
+    height: 70px;
+
+    color: white;
+  
+    /* Makes the header fixed at the top */
+    top: 0;
+    /* Positions the header at the top of the page */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensures the header stays on top of other content */
+}
+
+
+     
+        @media (max-width: 768px) {
+            .spotify-footer {
+               display: none;
+            }
+        }
+        

@@ -1,0 +1,167 @@
+/* Spotify Header */
+.spotify-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    background-color: #0b0b0b; /* Keep the header background separate */
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+  
+}
+
+/* Logo styling */
+.spotify-logo img {
+    height: 35px;
+    margin-right: auto; /* Push the logo to the left by default */
+}
+
+/* Home icon styling */
+.homeicon {
+    border-radius: 50%;
+    background-color: #282828;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Create a small gap between the home icon and search bar */
+    margin-left: 580px; /* Adjust for larger screens */
+}
+
+/* Search bar styling */
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 350px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Align the search icon and text vertically */
+.search .fa-1x {
+    margin-right: 10px;
+}
+
+.search h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+/* Border change on hover */
+.search:hover {
+    border: 1px solid white;
+}
+
+/* Vertical divider style */
+.line {
+    margin: 0 10px;
+    color: #888;
+}
+
+/* User controls (Sign Up / Log In) */
+.signupp {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Push buttons to the far right */
+}
+
+/* Button styles */
+.signup, .login {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Sign up button */
+.signup {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.signup:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Log in button */
+.login {
+    background-color: white;
+    color: black;
+}
+
+.login:hover {
+    background-color: #e5e5e5;
+}
+
+/* RESPONSIVE STYLING */
+
+/* For screens less than or equal to 768px (tablet size) */
+@media (max-width: 768px) {
+    .spotify-header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .spotify-logo {
+        display: flex;
+        justify-content: center; /* Center the logo */
+        margin: 0 auto;
+    }
+
+    .homeicon {
+       display: none;
+    }
+
+    .search {
+        width: 100%; /* Take full width on smaller screens */
+        margin: 10px 0;
+    }
+
+    .search h4 {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .signupp {
+        margin-top: 10px; /* Add margin to create spacing */
+        justify-content: center;
+    }
+}
+
+/* For screens less than or equal to 480px (mobile size) */
+@media (max-width: 480px) {
+    .spotify-header {
+        padding: 10px;
+    }
+
+    .homeicon {
+        padding: 8px;
+    }
+
+    .search {
+        padding: 8px;
+        width: 100%; /* Full width on mobile */
+    }
+
+    .search h4 {
+        font-size: 12px;
+    }
+
+    .signup, .login {
+        padding: 8px 15px; /* Reduce padding on buttons */
+        font-size: 12px;
+    }
+}

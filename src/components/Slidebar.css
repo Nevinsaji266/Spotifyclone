@@ -1,0 +1,222 @@
+.main {
+    background-color: black; /* Match the project background */
+    padding: 20px;
+    color: white; /* Text color to contrast with black */
+    min-height: 100vh; /* Full height */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+
+/* Box Container - Dark background similar to Spotify */
+.box1 {
+    background-color: #181818; /* Dark background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 20px;
+
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Ensure the first div containing box1 is displayed as flex */
+.first {
+    display: flex; /* Makes .box1 divs inline */
+    flex-wrap: nowrap; /* Prevents wrapping */
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+/* Additional styles remain the same... */
+
+/* Box2 - Content Area */
+.box2 {
+    background-color: #181818; /* Spotify-like dark background */
+    border-radius: 12px;
+    padding: 20px;
+    margin-left: 420px; /* Adjust as necessary */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow for depth */
+    flex: 2; /* This allows box2 to take more space, adjust as necessary */
+}
+
+/* Library Header */
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Create Playlist Section */
+.firstplaylist {
+    background-color: #282828; /* Darker background for the first playlist section */
+    padding: 25px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Podcasts Section */
+.podcasts {
+    background-color: #282828; /* Darker background for the podcasts section */
+    padding: 25px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Headings in the Slidebar */
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* User Controls (Buttons) */
+.user-controls {
+    margin-top: 10px;
+}
+
+/* Spotify-like Button Styles */
+.crp {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border-radius: 50px; /* Rounded pill shape */
+    padding: 10px 20px; /* Larger padding for more Spotify-like look */
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: inline-block;
+}
+
+.crp:hover {
+    background-color: #e5e5e5; /* Lighter gray on hover */
+    color: black;
+}
+
+/* Legal Section Styles */
+.legal {
+    color: white; /* Text color for contrast */
+    margin-top: 40px; /* Space from the above element */
+}
+
+/* Styling for rows */
+.legal-row {
+    display: flex; /* Use flexbox for layout */
+    margin-bottom: 15px; /* Reduced space below each row */
+}
+
+/* Individual text styling */
+.legal-row h6 {
+    font-size: 12px; /* Smaller font size for items */
+    margin: 0; /* Remove default margin */
+    color: #888; /* Change text color */
+    opacity: 0.8; /* Optional: slightly dimmed text for a softer look */
+    margin-left: 38px;
+}
+
+.legal-row h5 {
+    font-size: 12px; /* Smaller font size for items */
+    margin: 0; /* Remove default margin */
+    color: #888; /* Change text color */
+    opacity: 0.8; /* Optional: slightly dimmed text for a softer look */
+}
+.circular-image {
+    width: 150px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    margin-bottom: 10px; /* Space between the image and text */
+}
+.pa{
+    font-size: 13px;
+    color: #e5e5e5c8;}
+    .boxxxx1 {
+        position: relative; /* Required to position play button absolutely */
+        display: flex;
+        flex-direction: column;
+       
+        margin-bottom: 20px; /* Space between rows if needed */
+    }
+    
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        height: 18px;
+        width: 18px;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .boxxxx1:hover .play-button {
+        opacity: 1; /* Show play button on hover */
+    }
+    
+    .fa-play {
+        font-size: 20px;
+        color: black;
+        background-color: rgb(19, 209, 19);
+        border-radius: 50%;
+        padding: 8px;
+    }
+    .square-image{
+        width: 150px; /* Adjust width */
+        height: 150px; /* Adjust height */
+      border-radius: 10px;
+        object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+        margin-bottom: 10px; /* Space between the image and text */
+    }
+    
+    @media (max-width: 768px) {
+       .boxxxx1 {
+            align-items: center; 
+            text-align: center;
+        }
+        .rrr{
+            align-items: center; 
+            text-align: center;
+        }
+    }
+    .pa{
+        font-size: 13px;
+        color: #e5e5e5c8;
+      }
+      .paa{
+        font-size: 13px;
+        color: #e5e5e5c8;
+      
+      }
+     
+      .undericon {
+        border-radius: 50%;
+        background-color: #282828;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+       
+    
+    }
+    .undericon2 {
+        border-radius: 50%;
+        background-color: #282828;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+    
+    }
+    .undericon:hover{
+        background-color: #888;
+        transform: scale(1.01);
+    }
+    .undericon2:hover{
+        background-color: #888;
+        transform: scale(1.01);
+    }
